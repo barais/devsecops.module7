@@ -1,0 +1,216 @@
+% ============================================================
+% Bibliographie — Cours 7 : Open Source Supply Chain Attacks
+% Université de Rennes · IRISA / DiverSE
+% Références vérifiées
+% ============================================================
+
+% ---- Taxonomie et SoK ----
+
+@inproceedings{ladisa2023sok,
+  author    = {Ladisa, Piergiorgio and Plate, Henrik and Martinez, Matias and Barais, Olivier},
+  title     = {{SoK}: Taxonomy of Attacks on Open-Source Software Supply Chains},
+  booktitle = {2023 IEEE Symposium on Security and Privacy (SP)},
+  year      = {2023},
+  pages     = {1509--1526},
+  publisher = {IEEE},
+  doi       = {10.1109/SP46215.2023.10179304},
+}
+
+@inproceedings{ohm2020backstabber,
+  author    = {Ohm, Marc and Plate, Henrik and Sykosch, Arnold and Meier, Michael},
+  title     = {{Backstabbers' Knife Collection}: A Review of Open Source Software Supply Chain Attacks},
+  booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment (DIMVA 2020)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {12223},
+  pages     = {23--43},
+  publisher = {Springer},
+  year      = {2020},
+  doi       = {10.1007/978-3-030-52683-2_2},
+}
+
+@inproceedings{ladisa2022malicious,
+  author    = {Ladisa, Piergiorgio and Plate, Henrik and Martinez, Matias and Barais, Olivier},
+  title     = {Towards the Detection of Malicious {Java} Packages},
+  booktitle = {Proceedings of the ACM Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses (SCORED'22)},
+  year      = {2022},
+  publisher = {ACM},
+  doi       = {10.1145/3560835.3564547},
+}
+
+@inproceedings{ladisa2023crosslang,
+  author    = {Ladisa, Piergiorgio and Plate, Henrik and Martinez, Matias and Barais, Olivier and Ponta, Serena Elisa},
+  title     = {A Feasibility Study of Automatic Malicious Package Detection for {npm} and {PyPI} Using a Single Model},
+  booktitle = {Proceedings of the 39th Annual Computer Security Applications Conference (ACSAC 2023)},
+  year      = {2023},
+  publisher = {ACM},
+  doi       = {10.1145/3627106.3627184},
+}
+
+% ---- Chiffres globaux ----
+
+@techreport{nagle2022census2,
+  author      = {Nagle, Frank and Hoffmann, Jessica and Lonsdorf, Björn and McLaughlin, Seth and Shorey, Riyanka and Zemlin, Jim},
+  title       = {Census {II} of Free and Open Source Software — Application Libraries},
+  institution = {Linux Foundation / Harvard Laboratory for Innovation Science / OpenSSF},
+  year        = {2022},
+  url         = {https://www.linuxfoundation.org/research/census-ii-of-free-and-open-source-software-application-libraries},
+}
+
+@techreport{sonatype2023sssc,
+  author      = {{Sonatype}},
+  title       = {9th Annual State of the Software Supply Chain Report},
+  institution = {Sonatype},
+  year        = {2023},
+  url         = {https://www.sonatype.com/hubfs/9th-Annual-SSSC-Report.pdf},
+}
+
+% ---- Incidents ----
+
+@online{azer2016leftpad,
+  author  = {Koçulu, Azer},
+  title   = {I've Just Liberated My Modules},
+  year    = {2016},
+  url     = {https://medium.com/@azer/i-ve-just-liberated-my-modules-9045c06be67c},
+  note    = {Origine de l'incident left-pad (mars 2016)},
+}
+
+@online{eventstream2018,
+  author  = {Wright, Dominic and {right9control}},
+  title   = {I don't know what to say. (event-stream incident)},
+  year    = {2018},
+  url     = {https://github.com/dominictarr/event-stream/issues/116},
+  note    = {GitHub issue décrivant l'attaque sur event-stream},
+}
+
+@online{pytorch2022dep,
+  author  = {{PyTorch Team}},
+  title   = {{PyTorch-nightly} Dependency Chain Compromise on {Linux-GPU} Packages},
+  year    = {2022},
+  url     = {https://pytorch.org/blog/compromised-nightly-dependency/},
+  note    = {Blog officiel PyTorch, décembre 2022},
+}
+
+@online{nodeipc2022,
+  author  = {Chen, Brandon},
+  title   = {Malicious Code in node-ipc — Protestware Targeting {Russia/Belarus} ({CVE-2022-23812})},
+  year    = {2022},
+  url     = {https://snyk.io/blog/peacenotwar-malicious-npm-node-ipc-package-vulnerability/},
+  note    = {Analyse Snyk de la compromission de node-ipc},
+}
+
+@online{xzutils2024,
+  author  = {Freund, Andres},
+  title   = {backdoor in upstream {xz/liblzma} leading to {SSH} server compromise ({CVE-2024-3094})},
+  year    = {2024},
+  url     = {https://www.openwall.com/lists/oss-security/2024/03/29/4},
+  note    = {Openwall OSS-Security mailing list, 29 mars 2024},
+}
+
+@online{solarwinds2021,
+  author  = {{Mandiant (FireEye)}},
+  title   = {Highly Evasive Attacker Leverages {SolarWinds} Supply Chain to Compromise Multiple Global Victims With {SUNBURST} Backdoor},
+  year    = {2020},
+  url     = {https://www.mandiant.com/resources/blog/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor},
+  note    = {Publication Mandiant, décembre 2020},
+}
+
+@online{birsan2021confusion,
+  author  = {Birsan, Alex},
+  title   = {Dependency Confusion: How {I} Hacked Into Apple, Microsoft and Dozens of Other Companies},
+  year    = {2021},
+  url     = {https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610},
+  note    = {Medium, février 2021},
+}
+
+@online{ua2021,
+  author  = {Bogatchev, Brandon},
+  title   = {ua-parser-js {npm} package compromised to deliver miners and stealers},
+  year    = {2021},
+  url     = {https://github.com/nicolo-ribaudo/tc39-chasing-shadows/issues/3},
+  note    = {npm Security Advisory, octobre 2021},
+}
+
+% ---- SAP Risk Explorer ----
+
+@online{saprisks2023,
+  author  = {Ladisa, Piergiorgio and Plate, Henrik and Martinez, Matias and Barais, Olivier},
+  title   = {{SAP} Risk Explorer for Software Supply Chains},
+  year    = {2023},
+  url     = {https://sap.github.io/risk-explorer-for-software-supply-chains/},
+  note    = {Outil open source interactif, GitHub Pages},
+}
+
+% ---- Défenses et outils ----
+
+@online{openssf_scorecard,
+  author  = {{OpenSSF Scorecard Authors}},
+  title   = {{OpenSSF Scorecard} — Security Health Metrics for Open Source},
+  year    = {2020},
+  url     = {https://github.com/ossf/scorecard},
+  note    = {Projet OpenSSF — https://scorecard.dev/},
+}
+
+@online{depsdev2021,
+  author  = {{Google Open Source Insights Team}},
+  title   = {{Open Source Insights} (deps.dev)},
+  year    = {2021},
+  url     = {https://deps.dev/},
+  note    = {Service Google d'analyse de dépendances open source},
+}
+
+@online{mitreattack_t1195,
+  author  = {{MITRE}},
+  title   = {{ATT&CK} Enterprise — Supply Chain Compromise ({T1195})},
+  year    = {2023},
+  url     = {https://attack.mitre.org/techniques/T1195/},
+  note    = {MITRE ATT&CK v14},
+}
+
+@online{ossindex,
+  author  = {{Sonatype}},
+  title   = {{OSS Index} — Free Vulnerability Data for Open Source Components},
+  year    = {2023},
+  url     = {https://ossindex.sonatype.org/},
+}
+
+@techreport{enisa2021supply,
+  author      = {{ENISA}},
+  title       = {{Threat Landscape for Supply Chain Attacks}},
+  institution = {European Union Agency for Cybersecurity (ENISA)},
+  year        = {2021},
+  url         = {https://www.enisa.europa.eu/publications/threat-landscape-for-supply-chain-attacks},
+}
+
+@techreport{cisa2022guidelines,
+  author      = {{CISA} and {NSA} and {ODNI}},
+  title       = {Enduring Security Framework: Securing the Software Supply Chain — Recommended Practices for Software Developers},
+  institution = {Cybersecurity and Infrastructure Security Agency (CISA)},
+  year        = {2022},
+  url         = {https://media.defense.gov/2022/Sep/01/2003068942/-1/-1/0/ESF_SECURING_THE_SOFTWARE_SUPPLY_CHAIN_DEVELOPERS.PDF},
+}
+
+@techreport{slsa2023,
+  author      = {{OpenSSF and Google}},
+  title       = {{Supply chain Levels for Software Artifacts (SLSA)} v1.0},
+  institution = {OpenSSF},
+  year        = {2023},
+  url         = {https://slsa.dev/spec/v1.0/},
+}
+
+% ---- Analyse statique / détection ----
+
+@online{backstabbers2024repo,
+  author  = {Ohm, Marc and {cybertier contributors}},
+  title   = {{Backstabbers' Knife Collection}: Dataset of Malicious Open Source Packages},
+  year    = {2024},
+  url     = {https://github.com/cybertier/Backstabbers-Knife-Collection},
+  note    = {Dépôt GitHub maintenu activement},
+}
+
+@online{virustotal2023,
+  author  = {{Google} / {VirusTotal}},
+  title   = {{VirusTotal} — Malware Intelligence Service},
+  year    = {2023},
+  url     = {https://www.virustotal.com/},
+  note    = {Service d'analyse multi-antivirus (74+ moteurs)},
+}
