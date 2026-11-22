@@ -141,6 +141,54 @@ layout: section
 
 ---
 
+# Frise chronologique : des attaques en accélération
+
+<div class="relative mt-10 pb-2">
+  <div class="border-t-2 border-dashed border-gray-600/50 absolute left-2 right-2 top-1.5 rounded"></div>
+
+  <div class="grid grid-cols-6 gap-3 relative">
+    <div class="flex flex-col items-center text-center">
+      <div class="w-4 h-4 rounded-full bg-rose-400 ring-4 ring-rose-900/40 relative z-10"></div>
+      <div class="mt-3 font-bold text-rose-300 text-xl">2018</div>
+      <div class="font-semibold">event-stream</div>
+      <div class="text-xs text-gray-400 mt-1">Backdoor, 1,5 M de dl/sem (npm)</div>
+    </div>
+    <div class="flex flex-col items-center text-center">
+      <div class="w-4 h-4 rounded-full bg-orange-400 ring-4 ring-orange-900/40 relative z-10"></div>
+      <div class="mt-3 font-bold text-orange-300 text-xl">2020</div>
+      <div class="font-semibold">SolarWinds</div>
+      <div class="text-xs text-gray-400 mt-1">Build serveur compromis</div>
+    </div>
+    <div class="flex flex-col items-center text-center">
+      <div class="w-4 h-4 rounded-full bg-amber-400 ring-4 ring-amber-900/40 relative z-10"></div>
+      <div class="mt-3 font-bold text-amber-300 text-xl">2021</div>
+      <div class="font-semibold">Dep. Confusion</div>
+      <div class="text-xs text-gray-400 mt-1">Birsan · 130 k$ chez Microsoft, Apple…</div>
+    </div>
+    <div class="flex flex-col items-center text-center">
+      <div class="w-4 h-4 rounded-full bg-emerald-400 ring-4 ring-emerald-900/40 relative z-10"></div>
+      <div class="mt-3 font-bold text-emerald-300 text-xl">2022</div>
+      <div class="font-semibold">node-ipc · PyTorch</div>
+      <div class="text-xs text-gray-400 mt-1">Protestware + dep. confusion</div>
+    </div>
+    <div class="flex flex-col items-center text-center">
+      <div class="w-4 h-4 rounded-full bg-cyan-400 ring-4 ring-cyan-900/40 relative z-10"></div>
+      <div class="mt-3 font-bold text-cyan-300 text-xl">2023</div>
+      <div class="font-semibold">245 032 paquets</div>
+      <div class="text-xs text-gray-400 mt-1">malveillants détectés (×3 en 1 an)</div>
+    </div>
+    <div class="flex flex-col items-center text-center">
+      <div class="w-4 h-4 rounded-full bg-violet-400 ring-4 ring-violet-900/40 relative z-10"></div>
+      <div class="mt-3 font-bold text-violet-300 text-xl">2024</div>
+      <div class="font-semibold">XZ Utils</div>
+      <div class="text-xs text-gray-400 mt-1">Backdoor, 2 ans de contributions</div>
+    </div>
+
+  </div>
+</div>
+
+---
+
 # event-stream (npm, 2018)
 
 **Le paquet :** `event-stream` — 1,5 million de téléchargements/semaine, 1 600 paquets dépendants
