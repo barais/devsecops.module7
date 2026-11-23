@@ -13,6 +13,10 @@ drawings:
 transition: slide-left
 title: "Cours 7 — Open Source Supply Chain Attacks"
 mdc: true
+pdf: true
+export: true
+comark: true
+download: true
 ---
 
 # Open Source  
