@@ -878,48 +878,19 @@ layout: end
 
 # Merci
 
-<div class="text-lg text-gray-500">Questions ?</div>
+<div class="mt-8 max-w-2xl mx-auto text-left">
 
-<div class="grid grid-cols-2 gap-3 mt-6">
+**Ressources :**
 
-<a href="https://sap.github.io/risk-explorer-for-software-supply-chains/" target="_blank" class="p-3 rounded-xl border border-indigo-400/40 bg-indigo-900/10 flex items-center gap-3 hover:bg-indigo-900/20 transition">
-<div class="text-2xl">🗺️</div>
-<div><div class="font-bold text-indigo-300">SAP Risk Explorer</div><div class="text-xs text-gray-400">Explorer les vecteurs d'attaque</div></div>
-</a>
+- 📄 **Poly du cours** : [télécharger le poly (PDF)](https://raw.githubusercontent.com/barais/devsecops.module7/refs/heads/master/poly/poly.pdf)
+* [OpenSSF Scorecard](https://scorecard.dev/)
+* [deps.dev (Google)](https://deps.dev/)
+* [MITRE ATT&CK — Supply Chain T1195](https://attack.mitre.org/techniques/T1195/)
+* [Alex Birsan — Dependency Confusion](https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610)
+- ➡️ **Cours suivant — Cours 8 — Reproducible Builds** : [https://olivier.barais.fr/devsecops.module8](https://olivier.barais.fr/devsecops.module8)
 
-<a href="https://scorecard.dev/" target="_blank" class="p-3 rounded-xl border border-emerald-400/40 bg-emerald-900/10 flex items-center gap-3 hover:bg-emerald-900/20 transition">
-<div class="text-2xl">📊</div>
-<div><div class="font-bold text-emerald-300">OpenSSF Scorecard</div><div class="text-xs text-gray-400">Évaluer le risque d'un projet</div></div>
-</a>
+</div>
 
-<a href="https://deps.dev/" target="_blank" class="p-3 rounded-xl border border-sky-400/40 bg-sky-900/10 flex items-center gap-3 hover:bg-sky-900/20 transition">
-<div class="text-2xl">🕸️</div>
-<div><div class="font-bold text-sky-300">deps.dev (Google)</div><div class="text-xs text-gray-400">Graphe de dépendances &amp; CVE</div></div>
-</a>
-
-<a href="https://attack.mitre.org/techniques/T1195/" target="_blank" class="p-3 rounded-xl border border-rose-400/40 bg-rose-900/10 flex items-center gap-3 hover:bg-rose-900/20 transition">
-<div class="text-2xl">⚔️</div>
-<div><div class="font-bold text-rose-300">MITRE ATT&amp;CK</div><div class="text-xs text-gray-400">T1195 Supply Chain</div></div>
-</a>
-
-<a href="https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610" target="_blank" class="p-3 rounded-xl border border-amber-400/40 bg-amber-900/10 flex items-center gap-3 hover:bg-amber-900/20 transition">
-<div class="text-2xl">🧪</div>
-<div><div class="font-bold text-amber-300">Alex Birsan</div><div class="text-xs text-gray-400">Dependency Confusion</div></div>
-</a>
-
-<a href="https://github.com/cybertier/Backstabbers-Knife-Collection" target="_blank" class="p-3 rounded-xl border border-cyan-400/40 bg-cyan-900/10 flex items-center gap-3 hover:bg-cyan-900/20 transition">
-<div class="text-2xl">🔪</div>
-<div><div class="font-bold text-cyan-300">Backstabbers' Knife</div><div class="text-xs text-gray-400">Collection de malwares</div></div>
-</a>
-
-<a href="https://doi.org/10.1109/SP46215.2023.10179304" target="_blank" class="p-3 rounded-xl border border-violet-400/40 bg-violet-900/10 flex items-center gap-3 hover:bg-violet-900/20 transition">
-<div class="text-2xl">📄</div>
-<div><div class="font-bold text-violet-300">Ladisa et al. — SoK</div><div class="text-xs text-gray-400">IEEE S&amp;P 2023 · Taxonomie</div></div>
-</a>
-
-<a href="https://www.sonatype.com/hubfs/9th-Annual-SSSC-Report.pdf" target="_blank" class="p-3 rounded-xl border border-fuchsia-400/40 bg-fuchsia-900/10 flex items-center gap-3 hover:bg-fuchsia-900/20 transition">
-<div class="text-2xl">📑</div>
-<div><div class="font-bold text-fuchsia-300">Sonatype SSSC 2023</div><div class="text-xs text-gray-400">Rapport annuel supply chain</div></div>
-</a>
-
+<div class="mt-8 text-sm opacity-50">
+Olivier Barais · Module DevSecOps
 </div>
