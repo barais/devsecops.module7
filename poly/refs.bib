@@ -29,21 +29,22 @@
 }
 
 @inproceedings{ladisa2022malicious,
-  author    = {Ladisa, Piergiorgio and Plate, Henrik and Martinez, Matias and Barais, Olivier},
+  author    = {Ladisa, Piergiorgio and Plate, Henrik and Martinez, Matias and Barais, Olivier and Ponta, Serena Elisa},
   title     = {Towards the Detection of Malicious {Java} Packages},
   booktitle = {Proceedings of the ACM Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses (SCORED'22)},
   year      = {2022},
   publisher = {ACM},
-  doi       = {10.1145/3560835.3564547},
+  doi       = {10.1145/3560835.3564548},
 }
 
 @inproceedings{ladisa2023crosslang,
-  author    = {Ladisa, Piergiorgio and Plate, Henrik and Martinez, Matias and Barais, Olivier and Ponta, Serena Elisa},
-  title     = {A Feasibility Study of Automatic Malicious Package Detection for {npm} and {PyPI} Using a Single Model},
+  author    = {Ladisa, Piergiorgio and Ponta, Serena Elisa and Ronzoni, Nicola and Martinez, Matias and Barais, Olivier},
+  title     = {On the Feasibility of Cross-Language Detection of Malicious Packages in {npm} and {PyPI}},
   booktitle = {Proceedings of the 39th Annual Computer Security Applications Conference (ACSAC 2023)},
+  pages     = {71--82},
   year      = {2023},
   publisher = {ACM},
-  doi       = {10.1145/3627106.3627184},
+  doi       = {10.1145/3627106.3627138},
 }
 
 % ---- Chiffres globaux ----
@@ -65,15 +66,6 @@
 }
 
 % ---- Incidents ----
-
-@online{azer2016leftpad,
-  author  = {Koçulu, Azer},
-  title   = {I've Just Liberated My Modules},
-  year    = {2016},
-  url     = {https://medium.com/@azer/i-ve-just-liberated-my-modules-9045c06be67c},
-  note    = {Origine de l'incident left-pad (mars 2016)},
-}
-
 @online{eventstream2018,
   author  = {Wright, Dominic and {right9control}},
   title   = {I don't know what to say. (event-stream incident)},
@@ -107,11 +99,11 @@
 }
 
 @online{solarwinds2021,
-  author  = {{Mandiant (FireEye)}},
-  title   = {Highly Evasive Attacker Leverages {SolarWinds} Supply Chain to Compromise Multiple Global Victims With {SUNBURST} Backdoor},
+  author  = {{CISA}},
+  title   = {Advanced Persistent Threat Compromise of Government Agencies, Critical Infrastructure, and Private Sector Organizations ({AA20-352A})},
   year    = {2020},
-  url     = {https://www.mandiant.com/resources/blog/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor},
-  note    = {Publication Mandiant, décembre 2020},
+  url     = {https://www.cisa.gov/news-events/cybersecurity-advisories/aa20-352a},
+  note    = {Advisory CISA lié à l'attaque SolarWinds/SUNBURST},
 }
 
 @online{birsan2021confusion,
@@ -123,11 +115,11 @@
 }
 
 @online{ua2021,
-  author  = {Bogatchev, Brandon},
-  title   = {ua-parser-js {npm} package compromised to deliver miners and stealers},
+  author  = {{GitHub Advisory Database}},
+  title   = {Embedded Malware in ua-parser-js ({CVE-2021-4229})},
   year    = {2021},
-  url     = {https://github.com/nicolo-ribaudo/tc39-chasing-shadows/issues/3},
-  note    = {npm Security Advisory, octobre 2021},
+  url     = {https://github.com/advisories/GHSA-pjwm-rvh2-c87w},
+  note    = {GHSA-pjwm-rvh2-c87w, octobre 2021},
 }
 
 % ---- SAP Risk Explorer ----
@@ -164,13 +156,6 @@
   year    = {2023},
   url     = {https://attack.mitre.org/techniques/T1195/},
   note    = {MITRE ATT&CK v14},
-}
-
-@online{ossindex,
-  author  = {{Sonatype}},
-  title   = {{OSS Index} — Free Vulnerability Data for Open Source Components},
-  year    = {2023},
-  url     = {https://ossindex.sonatype.org/},
 }
 
 @techreport{enisa2021supply,

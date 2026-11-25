@@ -203,7 +203,7 @@ L'incident `node-ipc` illustre une menace venue de l'intérieur : le mainteneur 
 ```javascript
 // Extrait de node-ipc/dao/ssl-geospec.js (version 10.1.1)
 if (ip && (ip.startsWith('russia') || ip.startsWith('belarus'))) {
-  require('peacenotwar')  // → efface récursivement le système de fichiers
+  require('peacenotwar')  // → écrase récursivement les fichiers (remplacés par un cœur)
 }
 ```
 
@@ -308,7 +308,7 @@ La catégorie A3 est la plus prolifique en termes d'incidents documentés, car e
 
 *A3-1 : Typosquatting.* L'attaquant enregistre un paquet dont le nom ressemble à un paquet populaire, en espérant que des développeurs commettent une faute de frappe. Les variations courantes sont : substitution d'un caractère (`requsets`), inversion (`lodhas`), remplacement visuel (`djang0`), pluriel/singulier, ajout d'un tiret.
 
-*A3-2 : Dependency Confusion.* L'attaquant publie sur le registre public un paquet portant le même nom qu'un paquet interne privé d'une organisation, avec un numéro de version plus élevé. Les gestionnaires de paquets qui accordent la priorité aux registres publics installent alors automatiquement le paquet malveillant. Birsan (2021) a démontré cette faille chez plus de 35 entreprises @birsan2021confusion.
+*A3-2 : Dependency Confusion.* L'attaquant publie sur le registre public un paquet portant le même nom qu'un paquet interne privé d'une organisation, avec un numéro de version plus élevé. Les gestionnaires de paquets qui accordent la priorité aux registres publics installent alors automatiquement le paquet malveillant. Birsan (2021) a démontré cette faille chez des dizaines d'entreprises (Apple, Microsoft, PayPal, Tesla…) @birsan2021confusion.
 
 ```
 Organisation : paquet interne @acme/auth-lib (registre privé, v2.1.0)
@@ -349,7 +349,7 @@ pip install maratlib
 curl https://pypi.org/maratlib/latest/maratlib.tar.gz | tar -x | bash setup.py
 ```
 
-Cette observation est au cœur de l'article de Ladisa et al. présenté au workshop SCORED'23 @ladisa2022malicious : l'hypothèse de sécurité qui voudrait que « pip installe et c'est tout » est fondamentalement fausse.
+Cette observation est au cœur de l'article de Ladisa et al. présenté au workshop SCORED'22 @ladisa2022malicious : l'hypothèse de sécurité qui voudrait que « pip installe et c'est tout » est fondamentalement fausse.
 
 == Taxonomie des techniques d'exécution
 
@@ -611,8 +611,8 @@ Les expériences de scan en temps réel de PyPI et npm pendant 10 jours produise
     fill: (_, row) => if calc.odd(row) { luma(248) } else { white },
     inset: 7pt,
     [*Écosystème*], [*Vrais positifs (TP)*], [*Faux positifs (FP)*], [*Précision*],
-    [npm], [38], [1 083], [~3,4 %],
-    [PyPI], [17], [453], [~3,6 %],
+    [npm], [37], [1 083], [~3,4 %],
+    [PyPI], [17], [385], [~4,4 %],
   )
 ]
 
@@ -732,7 +732,7 @@ Une défense efficace contre les attaques supply chain est multi-couches. Le tab
     [Code source], [Signature de commits (GPG/Sigstore), branch protection, 2 reviewers minimum],
     [Dépendances], [Pinning + hash intégrité, audit automatique (pip-audit, npm audit), SBOM],
     [Build], [Build reproductible, environnement éphémère, permissions minimales (SLSA)],
-    [Artefacts], [Signature (Cosign/Sigstore), hash publié, attestation SLSA L2+],
+    [Artefacts], [Signature (Cosign/Sigstore), hash publié, attestation SLSA L2+ @slsa2023],
     [Distribution], [Canal TLS vérifié, vérification du hash à l'installation],
     [Runtime], [Scan d'image (Trivy), politique d'admission (OPA, Kubernetes)],
     [Gouvernance], [MFA sur tous les comptes de mainteneurs, audit des droits de publication],

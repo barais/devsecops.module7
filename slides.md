@@ -29,7 +29,7 @@ download: true
 </div>
 
 <div class="pt-2 text-xs text-gray-500">
-  Basé sur les travaux de Ladisa, Ponta, Martinez, Barais — SAP Security Research / Université de Rennes
+  Basé sur les travaux de Ladisa, Plate, Martinez, Barais — SAP Security Research / Université de Rennes
 </div>
 
 ---
@@ -383,7 +383,7 @@ npm résout   → préfère la version publique la plus haute → payload exécu
 **A3-3 : Compromission d'un compte mainteneur**
 - Si le token npm d'un mainteneur est volé → publication malveillante sous sa signature
 - `event-stream` (2018) : transfert de propriété volontaire, backdoor ciblant Bitcoin Copay
-- > 8 millions de téléchargements/semaine concernés
+- ~ 1,5 million de téléchargements/semaine concernés
 
 **A3-4 : Abandon + Reprise malveillante**
 - Paquet abandonné : l'attaquant en devient mainteneur
@@ -441,7 +441,7 @@ curl http://pypi.org/maratlib/latest | bash
 
 > *"Blindly installing a 3rd-party dependency  
 > can be dangerous."*  
-> — Ladisa et al., SCORED'23
+> — Ladisa et al., SCORED'22
 
 L'installateur de paquets est un **vecteur d'exécution de code arbitraire** si le paquet est malveillant.
 
@@ -717,8 +717,8 @@ layout: section
 
 **Résultats (Ladisa et al., ACSAC'23) :**
 
-- npm : 38 vrais positifs détectés (TP), **1 083 faux positifs** (FP)
-- PyPI : 17 TP, **453 FP**
+- npm : 37 vrais positifs détectés (TP), **1 083 faux positifs** (FP)
+- PyPI : 17 TP, **385 FP**
 - Le modèle cross-langage détecte **autant** que les modèles mono-langage tout en étant plus général
 
 > Le taux de FP reste le principal défi — beaucoup de petits paquets légitimes ressemblent à des malwares par leurs métadonnées.
